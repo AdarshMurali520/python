@@ -1,0 +1,40 @@
+class Students:
+    gm=0
+    def __init__(self,n,a,e,p,c,m):
+        self.__name=n
+        self.age=a
+        self.email=e
+        self.__phy=p
+        self.chem=c
+        self.maths=m
+
+    def xy(self):
+        print("Name:",self.__name,"Age:",self.age,"Email:",self.email,"Physics mark:",self.__phy,"Chemistry mark:",self.chem,"Maths mark:",self.maths)
+        print('\n')
+
+    def total(self):
+        print("Total marks by",self.__name,"=",self.__phy+self.chem+self.maths+Students.gm)
+    #
+    # def getname(self):
+    #     return self.__name
+    # def phy(self,n):
+    #     return self.__phy+n
+
+s1=Students('Adarsh',22,'adarsh@gmail.com',75,89,84)
+s2=Students('Arun',21,'arun@gmail.com',85,71,85)
+s3=Students('Angel',22,'angel@gmail.com',84,76,87)
+s4=Students('Kiran',27,'kiran@gmail.com',68,84,74)
+s5=Students('Kuttu',23,'kuttu@gmail.com',85,89,97)
+
+s1.xy()
+s2.xy()
+s3.xy()
+s4.xy()
+s5.xy()
+
+
+s3.total()
+# print(s1.phy(25))
+Students.gm=12
+
+s3.total()
