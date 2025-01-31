@@ -1,0 +1,21 @@
+c=['RED','BLUE','YELLOW','ORANGE','GREEN']
+
+l=1
+while l>0:
+    print(c)
+
+    a=input('enter a color:')
+    if a=='0':
+        print("thank you")
+        break
+    else:
+        # random.shuffle(c)
+        b=random.choice(c)
+        print(b)
+        if a==b:
+            print("you won")
+            time.sleep(1)
+        else:
+            print("""you lost
+try again...""")
+            time.sleep(1)
